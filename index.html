@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surindhar S | Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Surindhar S, a motivated Software Engineer specializing in Java, Python, Web Development, and MongoDB. Explore projects and skills.">
+    <meta name="keywords" content="Surindhar S, Software Engineer, Java, Python, Web Developer, Portfolio, Bannari Amman Institute of Technology">
+    <meta name="author" content="Surindhar S">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for social and platform icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dark-theme">
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-dot" class="custom-cursor-dot"></div>
+
+    <!-- Background Grid & Glowing Orbs -->
+    <div class="cyber-grid"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo cursor-hover">
+                <span class="logo-accent">&lt;</span>SURINDHAR<span class="logo-accent">.DEV /&gt;</span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link cursor-hover active">Home</a>
+                <a href="#about" class="nav-link cursor-hover">About</a>
+                <a href="#skills" class="nav-link cursor-hover">Skills</a>
+                <a href="#projects" class="nav-link cursor-hover">Projects</a>
+                <a href="#experience" class="nav-link cursor-hover">Journey</a>
+                <a href="#contact" class="nav-link cursor-hover">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Resume Button -->
+                <a href="assets/resume.pdf" download="Surindhar_S_Resume.pdf" class="btn btn-secondary nav-resume-btn cursor-hover">
+                    CV <i data-lucide="download"></i>
+                </a>
+                
+                <!-- Theme Toggle -->
+                <button id="theme-toggle" class="theme-toggle-btn cursor-hover" aria-label="Toggle Theme">
+                    <i data-lucide="moon" class="theme-icon-dark"></i>
+                    <i data-lucide="sun" class="theme-icon-light"></i>
+                </button>
+                
+                <!-- Mobile Nav Toggle -->
+                <button class="mobile-toggle cursor-hover" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="hero-badge reveal-item">
+                        <span class="badge-dot"></span>
+                        Ready to Innovate
+                    </div>
+                    <h1 class="hero-title reveal-item">
+                        Hi, I am <br>
+                        <span class="text-glow">Surindhar S</span>
+                    </h1>
+                    <h2 class="hero-subtitle reveal-item">
+                        I build <span id="typewriter" class="typewriter-text"></span><span class="cursor-pipe">|</span>
+                    </h2>
+                    <p class="hero-desc reveal-item">
+                        Information Technology student and aspiring software professional. Passionate about solving complex problems, writing clean code, and engineering high-impact digital solutions.
+                    </p>
+                    <div class="hero-actions reveal-item">
+                        <a href="#projects" class="btn btn-primary cursor-hover">
+                            View My Work <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="assets/resume.pdf" download="Surindhar_S_Resume.pdf" class="btn btn-secondary cursor-hover">
+                            Resume <i data-lucide="download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary cursor-hover">
+                            Let's Connect <i data-lucide="message-square"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual reveal-item">
+                    <div class="avatar-frame-container">
+                        <div class="avatar-glow-ring"></div>
+                        <div class="avatar-frame">
+                            <img src="assets/avatar.jpg" alt="Surindhar S Avatar" class="avatar-img">
+                            <div class="scanline"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- About Me (Bento Grid) -->
+        <section id="about" class="about-section">
+            <div class="container">
+
+                <div class="bento-grid">
+                    <!-- Bento Box 1: Summary -->
+                    <div class="bento-box box-large reveal-item">
+                        <div class="bento-header">
+                            <i data-lucide="user" class="bento-icon"></i>
+                            <h3>Biography</h3>
+                        </div>
+                        <p class="bento-desc">
+                            I am an Information Technology student at <strong>Bannari Amman Institute of Technology</strong>. With a strong academic foundation and hands-on experience, I bridge the gap between complex algorithms and responsive interfaces.
+                        </p>
+                        <p class="bento-desc">
+                            My journey in software engineering focuses on crafting robust backend logic while ensuring clean UI structures. I am eager to apply my technical skillset to real-world software challenges.
+                        </p>
+                        <div class="bento-meta-tags">
+                            <span class="meta-tag">CS Student</span>
+                            <span class="meta-tag">Self Learner</span>
+                            <span class="meta-tag">Problem Solver</span>
+                        </div>
+                    </div>
+
+                    <!-- Bento Box 2: Quick Info / Code Terminal -->
+                    <div class="bento-box box-medium reveal-item">
+                        <div class="bento-header">
+                            <i data-lucide="terminal" class="bento-icon"></i>
+                            <h3>Developer Console</h3>
+                        </div>
+                        <div class="terminal-container">
+                            <div class="terminal-header">
+                                <span class="terminal-dot red"></span>
+                                <span class="terminal-dot yellow"></span>
+                                <span class="terminal-dot green"></span>
+                                <span class="terminal-title">surindhar.sh</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="terminal-line"><span class="t-prompt">$</span> cat info.json</div>
+                                <div class="terminal-output">
+                                    {
+                                      <br>&nbsp;&nbsp;"name": "Surindhar S",
+                                      <br>&nbsp;&nbsp;"role": "Software Engineer",
+                                      <br>&nbsp;&nbsp;"location": "Tamil Nadu, India",
+                                      <br>&nbsp;&nbsp;"status": "Seeking Internships",
+                                      <br>&nbsp;&nbsp;"coffee_fueled": true
+                                    }
+                                </div>
+                                <div class="terminal-line"><span class="t-prompt">$</span> current_focus</div>
+                                <div class="terminal-output t-accent">Building secure digital products & refining OOP concepts.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Box 3: Quick Stats -->
+                    <div class="bento-box box-small reveal-item">
+                        <div class="bento-header">
+                            <i data-lucide="trophy" class="bento-icon"></i>
+                            <h3>Coding Stats</h3>
+                        </div>
+                        <div class="stats-container">
+                            <div class="stat-item">
+                                <span class="stat-number text-glow">7.4</span>
+                                <span class="stat-label">CGPA</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number text-glow">80%</span>
+                                <span class="stat-label">High School</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bento Box 4: Philosophy -->
+                    <div class="bento-box box-small reveal-item">
+                        <div class="bento-header">
+                            <i data-lucide="cpu" class="bento-icon"></i>
+                            <h3>Tech Philosophy</h3>
+                        </div>
+                        <p class="bento-text">
+                            "Clean code is not written once; it's refactored continuously. Simplicity is the ultimate sophistication."
+                        </p>
+                    </div>
+
+                    <!-- Bento Box 5: Academic Hub -->
+                    <div class="bento-box box-medium reveal-item">
+                        <div class="bento-header">
+                            <i data-lucide="graduation-cap" class="bento-icon"></i>
+                            <h3>Education Hub</h3>
+                        </div>
+                        <div class="education-highlights">
+                            <div class="edu-item">
+                                <div class="edu-dot"></div>
+                                <h4 class="edu-title">Bannari Amman Institute of Technology</h4>
+                                <p class="edu-subtitle">B.Tech - Information Technology | CGPA: 7.4</p>
+                                <span class="edu-date">2023 - 2027</span>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-dot"></div>
+                                <h4 class="edu-title">Saratha Matric Hr Sec School</h4>
+                                <p class="edu-subtitle">HSC Science | Percentage: 80%</p>
+                                <span class="edu-date">2022 - 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-glow">Skillset Matrix</h2>
+                    <p class="section-subtitle">A visual layout of languages, tools, and technical proficiency.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-category reveal-item">
+                        <h3 class="category-title"><i data-lucide="code-2"></i> Languages</h3>
+                        <div class="skills-list">
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">C / C++</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web & Frontend -->
+                    <div class="skills-category reveal-item">
+                        <h3 class="category-title"><i data-lucide="layout"></i> Frontend Dev</h3>
+                        <div class="skills-list">
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML5 / CSS3</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">JavaScript (ES6+)</span>
+                                    <span class="skill-percent">65%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-category reveal-item">
+                        <h3 class="category-title"><i data-lucide="database"></i> Databases</h3>
+                        <div class="skills-list">
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">MySQL</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="75%"></div></div>
+                            </div>
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percent">70%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Practice -->
+                    <div class="skills-category reveal-item">
+                        <h3 class="category-title"><i data-lucide="settings"></i> Tools & Practice</h3>
+                        <div class="skills-list">
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="80%"></div></div>
+                            </div>
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / IDEs</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="85%"></div></div>
+                            </div>
+                            <div class="skill-card cursor-hover">
+                                <div class="skill-info">
+                                    <span class="skill-name">LeetCode / HackerRank</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="skill-bar"><div class="skill-progress-bar" data-width="75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-glow">Project Archives</h2>
+                    <p class="section-subtitle">Realized creations, application designs, and algorithm frameworks.</p>
+                </div>
+
+                <!-- Filter Controls -->
+                <div class="filter-controls reveal-item">
+                    <button class="filter-btn active cursor-hover" data-filter="all">All Systems</button>
+                    <button class="filter-btn cursor-hover" data-filter="web">Web Apps</button>
+                    <button class="filter-btn cursor-hover" data-filter="tools">System Tools & APIs</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal-item" data-category="web">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_counseling.png" alt="Virtual Counseling Supporter" class="project-image">
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <button class="btn-icon cursor-hover open-modal" data-modal="counseling-modal" aria-label="View Details">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <a href="https://github.com/Surindhar-It/counsellingapp" target="_blank" rel="noopener" class="btn-icon cursor-hover" aria-label="GitHub Repo">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                    <a href="https://counsellingapp.vercel.app/" target="_blank" rel="noopener" class="btn-icon cursor-hover" aria-label="Live Demo">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Application</span>
+                            <h3 class="project-title">MindBridge - Virtual Counseling</h3>
+                            <p class="project-short-desc">
+                                Friendly support platform offering emotional assistance and guidance through secure interactive dialogues.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card reveal-item" data-category="tools">
+                        <div class="project-image-wrapper">
+                            <img src="assets/project_verification.png" alt="Digital Profile Verification System" class="project-image">
+                            <div class="project-overlay">
+                                <div class="overlay-actions">
+                                    <button class="btn-icon cursor-hover open-modal" data-modal="verification-modal" aria-label="View Details">
+                                        <i data-lucide="eye"></i>
+                                    </button>
+                                    <a href="https://github.com/Surindhar-It/DIGITAL-PROFILE-VERIFICATION-SYSTEM" target="_blank" rel="noopener" class="btn-icon cursor-hover" aria-label="GitHub Repo">
+                                        <i data-lucide="github"></i>
+                                    </a>
+                                    <a href="https://digital-profile-verification-system.vercel.app/" target="_blank" rel="noopener" class="btn-icon cursor-hover" aria-label="Live Demo">
+                                        <i data-lucide="external-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Backend System</span>
+                            <h3 class="project-title">Digital Profile Verification</h3>
+                            <p class="project-short-desc">
+                                Student profile analyzer checking ranking datasets across LeetCode, CodeChef, and GitHub.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Journey Timeline & Certifications -->
+        <section id="experience" class="timeline-section">
+            <div class="container">
+                <div class="timeline-wrapper">
+                    <!-- Left: Academic Path -->
+                    <div class="timeline-column">
+                        <div class="section-header align-left">
+                            <h2 class="section-title text-glow">Professional Path</h2>
+                            <p class="section-subtitle">Education milestones and academic milestones.</p>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item reveal-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content cursor-hover">
+                                    <span class="timeline-date">2023 - 2027</span>
+                                    <h3 class="timeline-title">Bannari Amman Institute of Technology</h3>
+                                    <h4 class="timeline-sub">B.Tech - Information Technology</h4>
+                                    <p class="timeline-desc">
+                                        Acquiring solid skills in Database Management, Object-Oriented Principles, Java Programming, and Data Structures. CGPA: 7.4.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content cursor-hover">
+                                    <span class="timeline-date">2022 - 2023</span>
+                                    <h3 class="timeline-title">Saratha Matric Hr Sec School</h3>
+                                    <h4 class="timeline-sub">High School Graduation (HSC)</h4>
+                                    <p class="timeline-desc">
+                                        Completed with 80% focus on Mathematics, Physics, Chemistry, and Computer Science.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Certifications & Badges -->
+                    <div class="certifications-column">
+                        <div class="section-header align-left">
+                            <h2 class="section-title text-glow">Certifications</h2>
+                            <p class="section-subtitle">Verified assessments and training programs.</p>
+                        </div>
+                        <div class="certifications-list">
+                            <div class="cert-card reveal-item cursor-hover">
+                                <div class="cert-icon">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h3 class="cert-title">Python Basics Certification</h3>
+                                    <p class="cert-issuer">HackerRank Verification System</p>
+                                    <a href="https://www.hackerrank.com/profile/surindhar_it23" target="_blank" rel="noopener" class="cert-link">Verify Credentials <i data-lucide="external-link"></i></a>
+                                </div>
+                            </div>
+
+                            <div class="cert-card reveal-item cursor-hover">
+                                <div class="cert-icon">
+                                    <i data-lucide="award"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h3 class="cert-title">C & C++ Programming</h3>
+                                    <p class="cert-issuer">CSC Computer Education Center</p>
+                                    <span class="cert-status">Completed Classroom Course</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title text-glow">Establish Connection</h2>
+                    <p class="section-subtitle">Let's build something epic together. Drop a message below.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Form -->
+                    <div class="contact-form-container reveal-item">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" " class="form-input">
+                                <label for="name" class="form-label">Full Name</label>
+                                <span class="form-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" " class="form-input">
+                                <label for="email" class="form-label">Email Address</label>
+                                <span class="form-error">Please enter a valid email</span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" name="message" required placeholder=" " class="form-input form-textarea"></textarea>
+                                <label for="message" class="form-label">Transmission Message</label>
+                                <span class="form-error">Message cannot be empty</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit cursor-hover">
+                                <span class="btn-text">Send Message</span>
+                                <i data-lucide="send" class="btn-icon"></i>
+                                <span class="btn-loader"></span>
+                            </button>
+                            <div id="form-success" class="form-response success-message">
+                                <i data-lucide="check-circle"></i> Message broadcasted successfully! I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Details -->
+                    <div class="contact-info-container reveal-item">
+                        <div class="contact-card cursor-hover">
+                            <i data-lucide="mail" class="info-icon"></i>
+                            <div class="info-details">
+                                <span class="info-label">Direct Communication</span>
+                                <a href="mailto:surindhar9f@gmail.com" class="info-value">surindhar9f@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card cursor-hover">
+                            <i data-lucide="phone" class="info-icon"></i>
+                            <div class="info-details">
+                                <span class="info-label">Secure Line</span>
+                                <a href="tel:+916380530810" class="info-value">+91 6380530810</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card cursor-hover">
+                            <i data-lucide="map-pin" class="info-icon"></i>
+                            <div class="info-details">
+                                <span class="info-label">Grid Location</span>
+                                <span class="info-value">Gobichettipalayam, India</span>
+                            </div>
+                        </div>
+
+                        <!-- Social matrix -->
+                        <div class="social-matrix">
+                            <h3 class="social-title">External Grid Nodes</h3>
+                            <div class="social-links">
+                                <a href="https://github.com/Surindhar-It" target="_blank" rel="noopener" class="social-btn cursor-hover" aria-label="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/surindhar-s-872594296" target="_blank" rel="noopener" class="social-btn cursor-hover" aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://leetcode.com/u/surindhar_it/" target="_blank" rel="noopener" class="social-btn cursor-hover" aria-label="LeetCode">
+                                    <i class="fa-solid fa-code"></i>
+                                </a>
+                                <a href="https://www.hackerrank.com/profile/surindhar_it23" target="_blank" rel="noopener" class="social-btn cursor-hover" aria-label="HackerRank">
+                                    <i class="fa-brands fa-hackerrank"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 SURINDHAR S. All systems operational.</p>
+            <div class="footer-meta">
+                <span>Core: HTML / CSS / Vanilla JS</span>
+                <span class="footer-divider">|</span>
+                <span>Design System: Cyberpunk Purple</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Counseling Modal -->
+    <div id="counseling-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close cursor-hover" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <span class="modal-badge">Web Application</span>
+                <h3 class="modal-title">MindBridge - Virtual Counseling</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-wrapper">
+                    <img src="assets/project_counseling.png" alt="Virtual Counseling Supporter Detail" class="modal-img">
+                </div>
+                <div class="modal-content-grid">
+                    <div>
+                        <h4>Project Overview</h4>
+                        <p class="modal-desc">
+                            A highly responsive and compassionate chat application that delivers mental health assistance and general emotional guidance. It is designed to act as a user-friendly conversational partner, giving people a safe digital space to reflect and express themselves.
+                        </p>
+                        <p class="modal-desc">
+                            Created with a mobile-first philosophy, this web page operates with fluid animations, custom chat states, and accessible layouts.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>System Specs</h4>
+                        <ul class="specs-list">
+                            <li><strong>Core Tech:</strong> HTML5, CSS3, ES6 JavaScript</li>
+                            <li><strong>Styling:</strong> Responsive flex grid, Glassmorphic panels</li>
+                            <li><strong>Target:</strong> Web Browsers, Mobile Viewports</li>
+                            <li><strong>Deployment:</strong> Vercel Platform</li>
+                        </ul>
+                        <div class="modal-actions">
+                            <a href="https://github.com/Surindhar-It/counsellingapp" target="_blank" rel="noopener" class="btn btn-secondary cursor-hover">
+                                Codebase <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://counsellingapp.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary cursor-hover">
+                                Live Demo <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Verification Modal -->
+    <div id="visual-verification-modal" class="modal-overlay"></div> <!-- Replaced dynamic template below -->
+    <div id="verification-modal" class="modal-overlay">
+        <div class="modal-box">
+            <button class="modal-close cursor-hover" aria-label="Close Modal">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <span class="modal-badge">Data Analysis & Web</span>
+                <h3 class="modal-title">Digital Profile Verification System</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image-wrapper">
+                    <img src="assets/project_verification.png" alt="Digital Profile Verification System Detail" class="modal-img">
+                </div>
+                <div class="modal-content-grid">
+                    <div>
+                        <h4>Project Overview</h4>
+                        <p class="modal-desc">
+                            An automated student verification dashboard that aggregates, parses, and formats data from coding platforms like LeetCode, CodeChef, Codeforces, and GitHub.
+                        </p>
+                        <p class="modal-desc">
+                            The system computes unified leaderboards and visualizes student stats in real-time, helping recruiters filter candidates transparently based on coding activity and skill profiles.
+                        </p>
+                    </div>
+                    <div>
+                        <h4>System Specs</h4>
+                        <ul class="specs-list">
+                            <li><strong>Core Tech:</strong> Python, Java, JSON Parsers</li>
+                            <li><strong>Database:</strong> MongoDB & MySQL API caching</li>
+                            <li><strong>Scrapers:</strong> Beautiful Soup & REST APIs</li>
+                            <li><strong>UI Layer:</strong> Interactive dashboards</li>
+                        </ul>
+                        <div class="modal-actions">
+                            <a href="https://github.com/Surindhar-It/DIGITAL-PROFILE-VERIFICATION-SYSTEM" target="_blank" rel="noopener" class="btn btn-secondary cursor-hover">
+                                Codebase <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://digital-profile-verification-system.vercel.app/" target="_blank" rel="noopener" class="btn btn-primary cursor-hover">
+                                Live Demo <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
