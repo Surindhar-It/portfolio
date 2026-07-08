@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* --- Hero Section Typewriter Glitch Effect --- */
     const textTarget = document.getElementById('typewriter');
-    const professions = ['Software Engineer', 'Java Developer', 'Problem Solver', 'IT Student'];
+    const professions = ['a Software Engineer', 'a Java Developer', 'a Problem Solver', 'an IT Student'];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
